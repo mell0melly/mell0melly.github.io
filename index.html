@@ -14,11 +14,12 @@
         }
         
         #bio {
-            margin-right: 80px;
-            margin-left: 80px;
-            border-style: dashed;
-            border-radius: 5px;
-            border-color: pink;
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            align-items: center;
+            gap: 15px; 
+            margin: 80px;
+            border: 2px dashed 5px pink;
             background-color: white;
         }
         
@@ -43,13 +44,11 @@
     
     <body>
         <section id="bio">
-            <section>
-                <img src="/assets/kwakfjsd.png">
-            </section>
-            <section>
+            <img src="/assets/kwakfjsd.png">
+            <div>
                 <h1>Melanie Nguyen</h1>
                 <p>A highschool senior interested in cybersecurity and visual arts.</p>
-            </section>
+            </div>
         </section>
     </body>
     
